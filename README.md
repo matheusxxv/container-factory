@@ -11,7 +11,7 @@
 
   [![NPM Version](https://img.shields.io/npm/v/container-factory?style=for-the-badge)](https://www.npmjs.com/package/container-factory)
   [![Downloads](https://img.shields.io/npm/dt/container-factory?style=for-the-badge)](https://www.npmjs.com/package/container-factory)
-  [![License](https://img.shields.io/npm/l/container-factory?style=for-the-badge)](https://github.com/ramkrishna/container-factory/blob/master/LICENSE)
+  [![License](https://img.shields.io/npm/l/container-factory?style=for-the-badge)](https://github.com/ramkrishna-js/container-factory/blob/main/LICENSE)
 </div>
 
 <div align="center">
@@ -98,7 +98,7 @@ await channel.send(createMessagePayload(buildContainer(gallery)));
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/container-factory.git`
+2. Clone your fork: `git clone https://github.com/ramkrishna-js/container-factory.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`
 5. Push to the branch: `git push origin my-new-feature`
@@ -107,7 +107,7 @@ await channel.send(createMessagePayload(buildContainer(gallery)));
 ## 👤 Developer
 
 **Ramkrishna**
-- Github: [@ramkrishna](https://github.com/ramkrishna)
+- Github: [@Ramkrishna](https://github.com/ramkrishna-js)
 
 ## 📄 License
 
